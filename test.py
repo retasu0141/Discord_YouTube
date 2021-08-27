@@ -35,7 +35,7 @@ class YTDLSource(discord.PCMVolumeTransformer):
             data = data['entries'][0]
         filename = data['url'] if stream else ytdl.prepare_filename(data)
         return cls(discord.FFmpegPCMAudio(filename, **ffmpeg_options), data=data)
-TOKEN = 'ODExOTE0MzU2MzA0MTE3NzYy.YC5IKw.RQMv2W9bA6pqmqyhKvdHMcJGo94'
+TOKEN = 'xxxx'
 client = discord.Client()
 @client.event
 async def on_message(message):
